@@ -1,0 +1,14 @@
+{
+    "name": "Wiki",
+    "version": "1.0.3",
+    "description": "Knowledge base / Wiki module with categories and articles",
+    "authors": [
+        "Flames"
+    ],
+    "providers": [
+        "Flute\\Modules\\Wiki\\Providers\\WikiProvider"
+    ],
+    "dependencies": {
+        "modules": {}
+    }
+}

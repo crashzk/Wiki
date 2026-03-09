@@ -1,0 +1,37 @@
+:root {
+    --wiki-sidebar-width: 280px;
+    --wiki-toc-width: 260px;
+    --wiki-content-max: 800px;
+    
+    --wiki-transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --wiki-transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    --wiki-transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --wiki-radius-xs: 4px;
+    --wiki-radius-sm: 8px;
+    --wiki-radius-md: 12px;
+    --wiki-radius-lg: 16px;
+    --wiki-radius-xl: 20px;
+    --wiki-radius-full: 9999px;
+    
+    --wiki-blur: 20px;
+    --wiki-blur-heavy: 40px;
+    
+    --wiki-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06);
+    --wiki-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+    --wiki-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+    --wiki-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+    
+    --wiki-glass-bg: rgba(255, 255, 255, 0.6);
+    --wiki-glass-border: rgba(255, 255, 255, 0.2);
+}
+
+:root[data-theme=dark] {
+    --wiki-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.3);
+    --wiki-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --wiki-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.35), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    --wiki-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    
+    --wiki-glass-bg: rgba(28, 28, 30, 0.75);
+    --wiki-glass-border: rgba(255, 255, 255, 0.08);
+}

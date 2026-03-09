@@ -1,0 +1,227 @@
+@media (max-width: 1280px) {
+    .wiki-main {
+        padding: 32px 40px;
+    }
+    
+    .wiki-content-wrapper {
+        gap: 20px;
+    }
+    
+    .wiki-toc {
+        width: 200px;
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .wiki-toc {
+        display: none;
+    }
+
+    .wiki-main {
+        padding: 32px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --wiki-sidebar-width: 260px;
+    }
+    
+    .wiki-main {
+        padding: 24px 32px;
+    }
+    
+    .wiki-article__title {
+        font-size: 1.75rem;
+    }
+    
+    .wiki-related__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .wiki-page {
+        flex-direction: column;
+    }
+
+    .wiki-sidebar {
+        width: 100%;
+        min-width: 100%;
+        position: relative;
+        top: 0;
+        height: auto;
+        max-height: none;
+        border-bottom: 1px solid var(--transp-1);
+        
+        &__header {
+            padding: 20px 16px;
+        }
+    }
+    
+    .wiki-categories {
+        max-height: 300px;
+        padding: 12px 16px 16px;
+    }
+
+    .wiki-main {
+        padding: 24px 16px;
+    }
+
+    .wiki-article__title {
+        font-size: 1.5rem;
+    }
+    
+    .wiki-article__description {
+        font-size: 1rem;
+    }
+    
+    .wiki-article__info {
+        gap: 12px;
+    }
+    
+    .wiki-breadcrumbs {
+        margin-bottom: 20px;
+        
+        .wiki-breadcrumb__link:not(:first-child):not(:last-child) {
+            display: none;
+        }
+        
+        .wiki-breadcrumb__separator:not(:first-of-type):not(:last-of-type) {
+            display: none;
+        }
+    }
+
+    .wiki-feedback {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+        
+        &__buttons {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    
+    .wiki-article-content {
+        font-size: 14px;
+        
+        h2 {
+            font-size: 1.3rem;
+            margin: 36px 0 16px;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            margin: 24px 0 12px;
+        }
+        
+        pre code {
+            font-size: 12px;
+            padding: 14px 16px;
+        }
+        
+        blockquote {
+            padding: 14px 16px;
+        }
+    }
+    
+    .wiki-code-header {
+        padding: 8px 12px;
+    }
+    
+    .wiki-code-lang {
+        font-size: 10px;
+    }
+    
+    .wiki-code-copy {
+        padding: 4px 8px;
+        font-size: 10px;
+        
+        span {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .wiki-main {
+        padding: 20px 12px;
+    }
+    
+    .wiki-sidebar__header {
+        padding: 16px 12px;
+    }
+    
+    .wiki-categories {
+        padding: 8px 12px 12px;
+    }
+    
+    .wiki-article__title {
+        font-size: 1.35rem;
+    }
+    
+    .wiki-article__meta {
+        gap: 8px;
+    }
+    
+    .wiki-article__category {
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+    
+    .wiki-article-header {
+        margin-bottom: 24px;
+        padding-bottom: 20px;
+    }
+    
+    .wiki-feedback__btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .wiki-related__card {
+        padding: 14px 16px;
+    }
+    
+    .wiki-empty {
+        padding: 48px 16px;
+        
+        &__icon {
+            width: 56px;
+            height: 56px;
+            
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+        }
+        
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (hover: none) {
+    .wiki-category__header:hover {
+        background: transparent;
+    }
+    
+    .wiki-category__header--active {
+        background: var(--transp-1);
+    }
+    
+    .wiki-article-item:hover {
+        background: transparent;
+    }
+    
+    .wiki-article-item--active {
+        background: var(--transp-05);
+    }
+}
